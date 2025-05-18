@@ -35,17 +35,3 @@ Implement the RepositoryRestConfigurer interface and override the configureHttpM
 
 ### Create angular module with defailt configuration
 
-### Add bootstrap support into the angular project
-
-
-### FAQ: Display Category Name in Product List Grid
-
-Question:
-
-How can I put a title in each product category grid list?
-
-What I want to learn is how I can put the category title(Books, Coffee Mugs and other thngs ) at the top of product grid list? I know it can be solved by binding but I don't know how to do that?
-
-Answer:
-
-https://github.com/darbyluv2code/fullstack-angular-and-springboot/blob/master/bonus-content/ecommerce-project/01-display-category-name-in-product-list-grid/01-display-category-name-in-product-list-grid.md
