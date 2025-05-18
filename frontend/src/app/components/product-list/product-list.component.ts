@@ -18,7 +18,7 @@ export class ProductListComponent implements OnInit {
 
   // new properties for pagination
   thePageNumber: number = 1;
-  thePageSize: number = 8;
+  thePageSize: number = 10;
   theTotalElements: number = 0;
 
   constructor(private productService: ProductService,
