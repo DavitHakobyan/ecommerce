@@ -14,6 +14,12 @@ export class ProductListComponent implements OnInit {
   products: Product[] = [];
   currentCategoryId: number = 1;
   searchMode: boolean = false;
+  previousCategoryId: number = 1;
+
+  // new properties for pagination
+  thePageNumber: number = 1;
+  thePageSize: number = 10;
+  theTotalElements: number = 0;
 
   constructor(private productService: ProductService,
               private route: ActivatedRoute) {

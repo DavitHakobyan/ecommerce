@@ -57,3 +57,30 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+### Add bootstrap support into the angular project
+
+
+### FAQ: Display Category Name in Product List Grid
+
+Question:
+
+How can I put a title in each product category grid list?
+
+What I want to learn is how I can put the category title(Books, Coffee Mugs and other thngs ) at the top of product grid list? I know it can be solved by binding but I don't know how to do that?
+
+Answer:
+
+https://github.com/darbyluv2code/fullstack-angular-and-springboot/blob/master/bonus-content/ecommerce-project/01-display-category-name-in-product-list-grid/01-display-category-name-in-product-list-grid.md
+
+
+### Implementing pagination in the product list
+
+```shell
+ng add @angular/localize
+```
+
+```shell
+ng add @ng-bootstrap/ng-bootstrap
+```
