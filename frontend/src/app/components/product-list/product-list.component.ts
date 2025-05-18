@@ -18,7 +18,7 @@ export class ProductListComponent implements OnInit {
 
   // new properties for pagination
   thePageNumber: number = 1;
-  thePageSize: number = 10;
+  thePageSize: number = 8;
   theTotalElements: number = 0;
 
   constructor(private productService: ProductService,
@@ -32,7 +32,7 @@ export class ProductListComponent implements OnInit {
     });
   }
 
-  private listProducts() {
+  listProducts() {
     this.searchMode = this.route.snapshot.paramMap.has('keyword');
 
     if (this.searchMode) {
