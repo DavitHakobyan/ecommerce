@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup} from '@angular/forms';
-import {Validators} from '@angular/forms';
-
+// import {Validators} from '@angular/forms';
+//
 // interface CheckoutForm {
 //   customer: {
 //     firstName: string;
