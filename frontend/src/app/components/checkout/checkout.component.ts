@@ -1,36 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup} from '@angular/forms';
 // import {Validators} from '@angular/forms';
-//
-// interface CheckoutForm {
-//   customer: {
-//     firstName: string;
-//     lastName: string;
-//     email: string;
-//   };
-//   shippingAddress: {
-//     street: string;
-//     city: string;
-//     state: string;
-//     country: string;
-//     zipCode: string;
-//   };
-//   billingAddress: {
-//     street: string;
-//     city: string;
-//     state: string;
-//     country: string;
-//     zipCode: string;
-//   };
-//   creditCard: {
-//     cardType: string;
-//     nameOnCard: string;
-//     cardNumber: string;
-//     securityCode: string;
-//     expirationMonth: string;
-//     expirationYear: string;
-//   };
-// }
 
 @Component({
   selector: 'app-checkout',
@@ -64,7 +34,7 @@ export class CheckoutComponent implements OnInit {
         zipCode: ['']
       }),
       billingAddress: this.formBuilder.group({
-        street: [''],
+        street: ['', ],
         city: [''],
         state: [''],
         country: [''],
@@ -82,7 +52,6 @@ export class CheckoutComponent implements OnInit {
   }
 
   copyShippingAddressToBillingAddress(event: any) {
-
     if (event.target.checked) {
       this.checkoutFormGroup.controls['billingAddress']
         .setValue(this.checkoutFormGroup.controls['shippingAddress'].value);
@@ -94,7 +63,7 @@ export class CheckoutComponent implements OnInit {
 
   onSubmit() {
     console.log("Handling the submit button");
-    // console.log(this.checkoutFormGroup.get('customer').value);
-    // console.log("The email address is " + this.checkoutFormGroup.get('customer').value.email);
+    console.log(this.checkoutFormGroup.get('customer')?.value);
+    console.log("The email address is " + this.checkoutFormGroup.get('customer')?.value.email);
   }
 }
