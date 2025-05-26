@@ -7,6 +7,7 @@ import {Component, OnInit} from '@angular/core';
   styleUrl: './members-page.component.css'
 })
 export class MembersPageComponent implements OnInit {
+
   constructor() {
   }
 
