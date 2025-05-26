@@ -84,3 +84,21 @@ ng add @angular/localize
 ```shell
 ng add @ng-bootstrap/ng-bootstrap
 ```
+
+### Using OKTA for Authentication
+
+Go to the [OKTA Developer Console](https://developer.okta.com/) and create a new application. Choose "Single-Page Application" as the platform. Follow the instructions to set up your application, and make sure to note your `Client ID` and `Issuer URL`.
+
+```shell
+npm install @okta/okta-angular@latest 
+```
+
+```shell
+npm install @okta/okta-auth-js@latest
+```
+
+```shell
+npm install @okta/okta-signin-widget@latest
+```
+
+
